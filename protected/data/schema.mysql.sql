@@ -45,3 +45,11 @@ CREATE TABLE tbl_client
 	trader  VARCHAR(128) NOT NULL,
 	saleperson VARCHAR(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+CREATE TABLE tbl_currency (
+    id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    currency_pair VARCHAR(128) NOT NULL,
+    decimals VARCHAR(128) NOT NULL,
+    
+);
