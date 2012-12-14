@@ -35,3 +35,13 @@ CREATE TABLE tbl_employee (
     phone int(10) unsigned DEFAULT NULL,
     email VARCHAR(128) NOT NULL
 );
+
+CREATE TABLE tbl_client
+(
+	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	account_number VARCHAR(128) NOT NULL,
+	clinet_email VARCHAR(128) NOT NULL,
+	phone int(10) unsigned DEFAULT NULL,
+	trader  VARCHAR(128) NOT NULL,
+	saleperson VARCHAR(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

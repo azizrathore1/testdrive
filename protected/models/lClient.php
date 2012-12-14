@@ -1,21 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "tbl_employee".
+ * This is the model class for table "tbl_client".
  *
- * The followings are the available columns in table 'tbl_employee':
+ * The followings are the available columns in table 'tbl_client':
  * @property integer $id
- * @property string $employee_name
- * @property string $address
+ * @property string $account_number
+ * @property string $clinet_email
  * @property string $phone
- * @property string $email
+ * @property string $trader
+ * @property string $saleperson
  */
-class Employee extends CActiveRecord
+class lClient extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Employee the static model class
+	 * @return lClient the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -27,7 +28,7 @@ class Employee extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'tbl_employee';
+		return 'tbl_client';
 	}
 
 	/**
@@ -38,12 +39,12 @@ class Employee extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('employee_name, address, email', 'required'),
-			array('employee_name, address, email', 'length', 'max'=>128),
+			array('account_number, clinet_email, trader, saleperson', 'required'),
+			array('account_number, clinet_email, trader, saleperson', 'length', 'max'=>128),
 			array('phone', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, employee_name, address, phone, email', 'safe', 'on'=>'search'),
+			array('id, account_number, clinet_email, phone, trader, saleperson', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,10 +66,11 @@ class Employee extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'employee_name' => 'Employee Name',
-			'address' => 'Address',
+			'account_number' => 'Account Number',
+			'clinet_email' => 'Clinet Email',
 			'phone' => 'Phone',
-			'email' => 'Email',
+			'trader' => 'Trader',
+			'saleperson' => 'Saleperson',
 		);
 	}
 
@@ -84,23 +86,12 @@ class Employee extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('employee_name',$this->employee_name,true);
-		$criteria->compare('address',$this->address,true);
+		$criteria->compare('account_number',$this->account_number,true);
+		$criteria->compare('clinet_email',$this->clinet_email,true);
 		$criteria->compare('phone',$this->phone,true);
-		$criteria->compare('email',$this->email,true);
+		$criteria->compare('trader',$this->trader,true);
+		$criteria->compare('saleperson',$this->saleperson,true);
 
-		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
-		));
-	}
-	public function read() {
-		// Warning: Please modify the following code to remove attributes that
-		// should not be searched.
-
-		$criteria=new CDbCriteria;
-
-		$criteria->compare('id',$this->id);
-		
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

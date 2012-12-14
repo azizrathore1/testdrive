@@ -1,0 +1,324 @@
+2012/12/14 10:07:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testdrive.tbl_client' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_client`.
+in C:\wamp\www\testdrive\index.php (13)
+2012/12/14 10:19:39 [error] [exception.CException] exception 'CException' with message 'Property "LClientController.load" is not defined.' in C:\wamp\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\testdrive\protected\controllers\LClientController.php(66): CComponent->__get('load')
+#1 C:\wamp\framework\web\actions\CInlineAction.php(50): LClientController->actionCreate()
+#2 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\framework\web\CWebApplication.php(283): CController->run('create')
+#11 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController('lClient/create')
+#12 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\testdrive\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+HTTP_REFERER=http://localhost/testdrive/index.php?r=lClient
+---
+2012/12/14 10:23:46 [error] [exception.CException] exception 'CException' with message 'Property "LClientController.employee_name" is not defined.' in C:\wamp\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\testdrive\protected\models\Employee.php(87): CComponent->__get('employee_name')
+#1 C:\wamp\www\testdrive\protected\controllers\LClientController.php(67): Employee->search()
+#2 C:\wamp\framework\web\actions\CInlineAction.php(50): LClientController->actionCreate()
+#3 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\framework\web\CWebApplication.php(283): CController->run('create')
+#12 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController('lClient/create')
+#13 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\testdrive\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+HTTP_REFERER=http://localhost/testdrive/index.php?r=lClient
+---
+2012/12/14 10:32:11 [error] [exception.CException] exception 'CException' with message 'Property "LClientController.employee_name" is not defined.' in C:\wamp\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\testdrive\protected\models\Employee.php(104): CComponent->__get('employee_name')
+#1 C:\wamp\www\testdrive\protected\controllers\LClientController.php(67): Employee->search1()
+#2 C:\wamp\framework\web\actions\CInlineAction.php(50): LClientController->actionCreate()
+#3 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\framework\web\CWebApplication.php(283): CController->run('create')
+#12 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController('lClient/create')
+#13 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\testdrive\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+HTTP_REFERER=http://localhost/testdrive/index.php?r=lClient
+---
+2012/12/14 10:36:23 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.name" is not defined.' in C:\wamp\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\testdrive\protected\controllers\LClientController.php(69): CComponent->__get('name')
+#1 C:\wamp\framework\web\actions\CInlineAction.php(50): LClientController->actionCreate()
+#2 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\framework\web\CWebApplication.php(283): CController->run('create')
+#11 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController('lClient/create')
+#12 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\testdrive\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+HTTP_REFERER=http://localhost/testdrive/index.php?r=lClient
+---
+2012/12/14 10:36:55 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.employee_name" is not defined.' in C:\wamp\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\testdrive\protected\controllers\LClientController.php(69): CComponent->__get('employee_name')
+#1 C:\wamp\framework\web\actions\CInlineAction.php(50): LClientController->actionCreate()
+#2 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\framework\web\CWebApplication.php(283): CController->run('create')
+#11 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController('lClient/create')
+#12 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\testdrive\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+HTTP_REFERER=http://localhost/testdrive/index.php?r=lClient
+---
+2012/12/14 10:36:56 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.employee_name" is not defined.' in C:\wamp\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\testdrive\protected\controllers\LClientController.php(69): CComponent->__get('employee_name')
+#1 C:\wamp\framework\web\actions\CInlineAction.php(50): LClientController->actionCreate()
+#2 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\framework\web\CWebApplication.php(283): CController->run('create')
+#11 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController('lClient/create')
+#12 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\testdrive\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+HTTP_REFERER=http://localhost/testdrive/index.php?r=lClient
+---
+2012/12/14 10:36:57 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.employee_name" is not defined.' in C:\wamp\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\testdrive\protected\controllers\LClientController.php(69): CComponent->__get('employee_name')
+#1 C:\wamp\framework\web\actions\CInlineAction.php(50): LClientController->actionCreate()
+#2 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\framework\web\CWebApplication.php(283): CController->run('create')
+#11 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController('lClient/create')
+#12 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\testdrive\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+HTTP_REFERER=http://localhost/testdrive/index.php?r=lClient
+---
+2012/12/14 10:36:57 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.employee_name" is not defined.' in C:\wamp\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\testdrive\protected\controllers\LClientController.php(69): CComponent->__get('employee_name')
+#1 C:\wamp\framework\web\actions\CInlineAction.php(50): LClientController->actionCreate()
+#2 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\framework\web\CWebApplication.php(283): CController->run('create')
+#11 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController('lClient/create')
+#12 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\testdrive\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+HTTP_REFERER=http://localhost/testdrive/index.php?r=lClient
+---
+2012/12/14 10:39:34 [error] [php] Trying to get property of non-object (C:\wamp\www\testdrive\protected\controllers\LClientController.php:69)
+Stack trace:
+#0 C:\wamp\framework\web\filters\CFilterChain.php(134): LClientController->runAction()
+#1 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\wamp\framework\web\filters\CInlineFilter.php(59): LClientController->filterAccessControl()
+#4 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\framework\web\CController.php(266): LClientController->runActionWithFilters()
+#7 C:\wamp\framework\web\CWebApplication.php(283): LClientController->run()
+#8 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\testdrive\index.php(13): CWebApplication->run()
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+in C:\wamp\www\testdrive\protected\controllers\LClientController.php (69)
+in C:\wamp\www\testdrive\index.php (13)
+2012/12/14 10:45:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\framework\web\CWebApplication.php(283): CController->run('create')
+#9 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController('lClient/create')
+#10 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\testdrive\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+HTTP_REFERER=http://localhost/testdrive/index.php?r=lClient
+---
+2012/12/14 10:52:57 [error] [php] Undefined variable: model2 (C:\wamp\www\testdrive\protected\controllers\LClientController.php:67)
+Stack trace:
+#0 C:\wamp\framework\web\filters\CFilterChain.php(134): LClientController->runAction()
+#1 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\wamp\framework\web\filters\CInlineFilter.php(59): LClientController->filterAccessControl()
+#4 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\framework\web\CController.php(266): LClientController->runActionWithFilters()
+#7 C:\wamp\framework\web\CWebApplication.php(283): LClientController->run()
+#8 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\testdrive\index.php(13): CWebApplication->run()
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+in C:\wamp\www\testdrive\protected\controllers\LClientController.php (67)
+in C:\wamp\www\testdrive\index.php (13)
+2012/12/14 10:53:34 [error] [exception.CException] exception 'CException' with message 'LClientController and its behaviors do not have a method or closure named "getCommandBuilder".' in C:\wamp\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\framework\db\ar\CActiveRecord.php(1395): CComponent->__call('getCommandBuild...', Array)
+#1 C:\wamp\framework\db\ar\CActiveRecord.php(1395): LClientController->getCommandBuilder()
+#2 C:\wamp\www\testdrive\protected\controllers\LClientController.php(67): CActiveRecord->find('all')
+#3 C:\wamp\framework\web\actions\CInlineAction.php(50): LClientController->actionCreate()
+#4 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\framework\web\CWebApplication.php(283): CController->run('create')
+#13 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController('lClient/create')
+#14 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\testdrive\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+HTTP_REFERER=http://localhost/testdrive/index.php?r=lClient
+---
+2012/12/14 10:56:04 [error] [php] Undefined variable: record (C:\wamp\www\testdrive\protected\models\Employee.php:108)
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\framework\web\filters\CFilterChain.php(134): LClientController->runAction()
+#2 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\wamp\framework\web\filters\CInlineFilter.php(59): LClientController->filterAccessControl()
+#5 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\framework\web\CController.php(266): LClientController->runActionWithFilters()
+#8 C:\wamp\framework\web\CWebApplication.php(283): LClientController->run()
+#9 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\testdrive\index.php(13): CWebApplication->run()
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+in C:\wamp\www\testdrive\protected\models\Employee.php (108)
+in C:\wamp\www\testdrive\protected\controllers\LClientController.php (68)
+in C:\wamp\www\testdrive\index.php (13)
+2012/12/14 11:00:12 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'all LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `tbl_employee` `t` WHERE all LIMIT 1.
+in C:\wamp\www\testdrive\protected\models\Employee.php (99)
+in C:\wamp\www\testdrive\protected\controllers\LClientController.php (68)
+in C:\wamp\www\testdrive\index.php (13)
+2012/12/14 11:00:12 [error] [php] Undefined variable: record (C:\wamp\www\testdrive\protected\models\Employee.php:108)
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\framework\web\filters\CFilterChain.php(134): LClientController->runAction()
+#2 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\wamp\framework\web\filters\CInlineFilter.php(59): LClientController->filterAccessControl()
+#5 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\framework\web\CController.php(266): LClientController->runActionWithFilters()
+#8 C:\wamp\framework\web\CWebApplication.php(283): LClientController->run()
+#9 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\testdrive\index.php(13): CWebApplication->run()
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+in C:\wamp\www\testdrive\protected\models\Employee.php (108)
+in C:\wamp\www\testdrive\protected\controllers\LClientController.php (68)
+in C:\wamp\www\testdrive\index.php (13)
+2012/12/14 11:01:50 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'all LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `tbl_employee` `t` WHERE all LIMIT 1.
+in C:\wamp\www\testdrive\protected\models\Employee.php (99)
+in C:\wamp\www\testdrive\protected\controllers\LClientController.php (68)
+in C:\wamp\www\testdrive\index.php (13)
+2012/12/14 11:01:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'all LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `tbl_employee` `t` WHERE all LIMIT 1' in C:\wamp\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\framework\db\CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryRow()
+#2 C:\wamp\framework\db\ar\CActiveRecord.php(1396): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\wamp\www\testdrive\protected\models\Employee.php(99): CActiveRecord->find('all')
+#4 C:\wamp\www\testdrive\protected\controllers\LClientController.php(68): Employee->read()
+#5 C:\wamp\framework\web\actions\CInlineAction.php(50): LClientController->actionCreate()
+#6 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#13 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\framework\web\CWebApplication.php(283): CController->run('create')
+#15 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController('lClient/create')
+#16 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\testdrive\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+HTTP_REFERER=http://localhost/testdrive/index.php?r=lClient
+---
+2012/12/14 11:08:13 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.employee_name" is not defined.' in C:\wamp\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\testdrive\protected\controllers\LClientController.php(68): CComponent->__get('employee_name')
+#1 C:\wamp\framework\web\actions\CInlineAction.php(50): LClientController->actionCreate()
+#2 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\framework\web\CWebApplication.php(283): CController->run('create')
+#11 C:\wamp\framework\web\CWebApplication.php(142): CWebApplication->runController('lClient/create')
+#12 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\testdrive\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/testdrive/index.php?r=lClient/create
+HTTP_REFERER=http://localhost/testdrive/index.php?r=lClient/index
+---
